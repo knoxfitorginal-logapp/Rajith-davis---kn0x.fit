@@ -948,6 +948,14 @@
                         <p class="text-zinc-600 text-sm md:text-base font-medium leading-relaxed bg-white p-4 rounded-xl shadow-sm border border-zinc-200 border-l-4 border-l-zinc-900">${weekData.focus}</p>
                     </div>
 
+                    <div class="bg-blue-50 border border-blue-200 p-3 sm:p-4 rounded-xl mb-6 shadow-sm flex items-start gap-3">
+                        <i class="fa-solid fa-circle-info text-blue-500 mt-0.5"></i>
+                        <p class="text-xs sm:text-sm text-blue-900 font-medium leading-relaxed">
+                            <strong class="font-black text-blue-700 uppercase tracking-wide text-[10px] sm:text-xs block mb-0.5">Recipe Links Are For Reference Only</strong>
+                            The recipe links attached to the meals are for inspiration. <strong>Do not follow the videos exactly!</strong> Adjust the ingredients, especially oil, butter, and extra fats, to strictly match the exact measurements provided in your plan.
+                        </p>
+                    </div>
+
                     <div class="space-y-5 sm:space-y-6">
                         ${weekData.meals.map(meal => {
                             if (meal.isTotal) {
@@ -1121,10 +1129,18 @@
                         </div>
                     </div>
 
-                    <div class="bg-blue-50 border border-blue-200 p-4 sm:p-5 rounded-2xl mb-6 sm:mb-8 shadow-sm">
+                    <div class="bg-blue-50 border border-blue-200 p-4 sm:p-5 rounded-2xl mb-6 shadow-sm">
                         <p class="text-sm text-blue-900 font-medium leading-relaxed">
                             <strong class="font-black text-blue-700 uppercase tracking-wide text-[10px] sm:text-xs block mb-1">Guidelines:</strong> 
                             ${workoutData.guidelines}
+                        </p>
+                    </div>
+                    
+                    <div class="bg-indigo-50 border border-indigo-200 p-4 sm:p-5 rounded-2xl mb-6 sm:mb-8 shadow-sm flex items-start gap-3">
+                        <i class="fa-brands fa-youtube text-indigo-500 mt-0.5 text-lg"></i>
+                        <p class="text-xs sm:text-sm text-indigo-900 font-medium leading-relaxed">
+                            <strong class="font-black text-indigo-700 uppercase tracking-wide text-[10px] sm:text-xs block mb-0.5">Video Reference Links Included</strong>
+                            Every exercise in the plan is clickable! Click on any exercise name in the table below to instantly open a YouTube search for a proper form and technique tutorial to help you execute the movement safely.
                         </p>
                     </div>
 
