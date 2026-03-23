@@ -722,7 +722,7 @@
                         <div class="relative z-10">
                             <p class="text-[10px] sm:text-xs font-black text-red-500 uppercase tracking-[0.2em] mb-2 flex items-center"><i class="fa-solid fa-bolt mr-2"></i> Built For Change</p>
                             <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight mb-3 sm:mb-4">Welcome to <span class="text-white italic">KN0X-FIT</span></h2>
-                            <p class="text-zinc-300 text-sm sm:text-base md:text-lg">Hello <span class="font-bold text-white">${client.name}</span>. Your personalized <strong class="text-red-400 uppercase text-xs tracking-wider border-b border-red-500/50 pb-0.5">${client.goal}</strong> blueprint is ready.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base md:text-lg">Hello <span class="font-bold text-white">${client.name}</span>. Your <strong class="text-red-400 uppercase text-xs tracking-wider border-b border-red-500/50 pb-0.5">RESULT-ORIENTED RECOMP</strong> blueprint is active. Follow this strictly for 30 days to force your body to burn fat while building lean tissue.</p>
                         </div>
                     </div>
 
@@ -858,6 +858,54 @@
                                         <div class="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-red-600 rounded-full shadow-md" style="left: ${(client.ffmi / 25) * 100}%;"></div>
                                     </div>
                                     <p class="text-[8px] text-zinc-600 font-bold tracking-widest uppercase text-right mt-2">Natural Limit: ~25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result-Oriented Timeline -->
+                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 shadow-sm mb-8">
+                        <div class="mb-6 flex items-center justify-between border-b border-zinc-100 pb-4">
+                            <h3 class="text-lg font-black text-zinc-900 uppercase tracking-wide flex items-center"><i class="fa-solid fa-chart-line text-red-600 mr-3 text-xl"></i> Expected Results Timeline</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="flex flex-col items-center mr-4">
+                                    <div class="w-8 h-8 rounded-full bg-zinc-900 text-white flex items-center justify-center font-black text-xs shadow-md z-10">W1</div>
+                                    <div class="w-0.5 h-full bg-zinc-200 mt-2"></div>
+                                </div>
+                                <div class="pb-6">
+                                    <h4 class="font-bold text-zinc-900 text-sm sm:text-base">Metabolic Shift & Debloat</h4>
+                                    <p class="text-xs sm:text-sm text-zinc-500 mt-1 leading-relaxed">Your body adapts to the 130g protein intake. Expect a drop in water retention, reduced bloating, and stabilized energy levels during your daily routine.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-col items-center mr-4">
+                                    <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-black text-xs shadow-md z-10">W2</div>
+                                    <div class="w-0.5 h-full bg-zinc-200 mt-2"></div>
+                                </div>
+                                <div class="pb-6">
+                                    <h4 class="font-bold text-zinc-900 text-sm sm:text-base">Strength & Recovery Spike</h4>
+                                    <p class="text-xs sm:text-sm text-zinc-500 mt-1 leading-relaxed">The PPL routine starts feeling natural. The strict maintenance calories (~2450) and high protein mean you recover faster and lift heavier without adding fat.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-col items-center mr-4">
+                                    <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs shadow-md z-10">W3</div>
+                                    <div class="w-0.5 h-full bg-zinc-200 mt-2"></div>
+                                </div>
+                                <div class="pb-6">
+                                    <h4 class="font-bold text-zinc-900 text-sm sm:text-base">Visible Recomposition</h4>
+                                    <p class="text-xs sm:text-sm text-zinc-500 mt-1 leading-relaxed">Fat loss becomes visually apparent, especially around the midsection. Muscles will feel harder and more "full" from the disciplined nutrition.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-col items-center mr-4">
+                                    <div class="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center font-black text-xs shadow-md z-10">W4</div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-zinc-900 text-sm sm:text-base">The Apex Result</h4>
+                                    <p class="text-xs sm:text-sm text-zinc-500 mt-1 leading-relaxed">By Day 28, the scale weight might be similar (73kg), but your body fat percentage will have dropped and lean mass increased. Clothes fit completely differently.</p>
                                 </div>
                             </div>
                         </div>
@@ -1129,7 +1177,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-blue-50 border border-blue-200 p-4 sm:p-5 rounded-2xl mb-6 shadow-sm">
+                    <div class="bg-blue-50 border border-blue-200 p-4 sm:p-5 rounded-2xl mb-6 sm:mb-8 shadow-sm">
                         <p class="text-sm text-blue-900 font-medium leading-relaxed">
                             <strong class="font-black text-blue-700 uppercase tracking-wide text-[10px] sm:text-xs block mb-1">Guidelines:</strong> 
                             ${workoutData.guidelines}
@@ -1313,6 +1361,10 @@
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check text-emerald-500 mt-1.5 mr-3 shrink-0"></i>
                                 <div><strong class="text-white">High Protein Kanji:</strong> Kanji is traditionally pure carbs. To make it anabolic, you MUST consume it with the listed Cherupayar (Green Gram) and Eggs/Soya as assigned in your plan.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1.5 mr-3 shrink-0"></i>
+                                <div><strong class="text-white">Track Your Results:</strong> This is a strict body recomposition blueprint. Take photos every Sunday morning on an empty stomach. The scale weight might not change drastically, but your mirror and strength will.</div>
                             </li>
                         </ul>
                     </div>
